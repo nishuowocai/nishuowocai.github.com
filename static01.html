@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="author" content="http//weibo.com/zswang" />
+    <title>Demo</title>
+    <style>
+body, button, input, select, textarea{
+    font: 12px/1.125 Arial, Helvetica, sans-serif;
+    _font-family: "SimSun";
+}
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+li{
+    list-style:none;
+}
+fieldset, img{
+    border: 0;
+}
+q:before, q:after{
+    content: '';
+}
+a:focus, input, textarea{
+    outline-style: none;
+}
+#wrapper{
+    min-width: 960px;
+    margin: 0 auto;
+}
+#content{
+    width: 960px;
+    margin: 0 auto;
+    _background: blue;
+    height: 540px;
+}
+#header{
+    height: 40px;
+    background: red;
+}
+#footer{
+    height: 40px;
+    background: black;
+}
+#left{
+    float: left;
+    width: 638px;
+    height: 538px;
+    border: solid 1px #ccc;
+}
+#right{
+    float: right;
+    width: 318px;
+    height: 538px;
+    border: solid 1px #ccc;
+    border-left: none;
+}
+#answersBox{
+    padding: 3px;
+    background: #cc1;
+}
+#answersInfo{
+    color: #cc00cc;
+    padding: 0 5px;
+}
+#messageBox{
+    height: 445px;
+    _background: green;
+}
+#editorInput{
+    margin: 5px;
+    font-size: 14px;
+}
+#answersBox input{
+    background: white;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 0 3px;
+}
+#playerBox li, #messageBox li{
+    padding: 6px;
+    border-bottom: dashed #ccc 1px;
+}
+#messageBox li span, #playerBox li span{
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;
+}
+#playerBox .prompter span{
+    background: #eee;
+    color: #111;
+}
+
+#playerBox .answer span{
+    background: #333;
+    color: white;
+}
+
+#playerBox .answer{
+    text-align: right;
+}
+
+#messageBox .info{
+    text-align: left;
+}
+#messageBox .info span{
+    background: #eee;
+    color: #111;
+}
+#messageBox .result{
+    text-align: right;
+}
+#messageBox .result span{
+    background: #333;
+    color: white;
+}
+#messageBox .result .fail{
+    background: red;
+}
+#messageBox .result .pass{
+    background: green;
+}
+ </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="content">
+            <div id="left">
+                <div id="answersBox">
+                    谜底：<input id="answersEditor" type="button" value="通知" disabled/><span id="answersInfo">谐音检查：<input type="button" value="tong" disabled /><input type="button" value="zhi" disabled /></span>
+                </div>
+                <div id="messageBox">
+                    <ul>
+                        <li class="info">
+                            <div><span>提示1</span><span>告示、广播、相近的词汇</span></div>
+                        </li>
+                        <li class="result">
+                            <div><span>回答1</span><span>消息</span><span class="fail">×</span></div>
+                        </li>
+                        <li class="result">
+                            <div><span>回答2</span><span>帖子</span><span class="fail">×</span></div>
+                        </li>
+                        <li class="info">
+                            <div><span>提示2</span><span>明天下午3点集合</span></div>
+                        </li>
+                        <li class="result">
+                            <div><span>回答3</span><span>通知</span><span class="pass">√</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="editorBox">
+                    <input id="editorInput" type="text" value="评估" /><input type="button" value="发送" />
+                </div>
+            </div>
+            <div id="right">
+                <div id="playerBox">
+                    <ul>
+                        <li class="prompter"><span>提示人</span><span>清洁工</span></li>
+                        <li class="answer"><span>解题人</span><span>rayi</span></li>
+                        <li class="answer"><span>解题人</span><span>尼奥</span></li>
+                        <li class="answer"><span>解题人</span><span>dron</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            
+        </div>
+    </div>
+    <script>
+void function(){
+    /**
+     * @see 
+     * @author 王集鹄(wangjihu,http//weibo.com/zswang)
+     * @version 2012-00-00
+     */
+}();
+    </script>
+</body>
+</html>

@@ -10,7 +10,16 @@ body{
     </style>
 </head>
 <body>
-    <script>
-    </script>
+    <ul>
+        <script>
+void function(){
+    var list = [['static01.html', '普通状态']];
+    for(var i = 0; i < list.length; i++){
+        var item = list[i];
+        document.write('<a href="' + item[0] + '">' + item[1] + '</a>');
+    }
+}();
+        </script>
+    </ul>
 </body>
 </html>
